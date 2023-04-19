@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bwa_ecommerce/theme.dart';
+import 'package:flutter_bwa_ecommerce/widgets/loading_button.dart';
 
 class SignUpPage extends StatefulWidget {
   @override
@@ -104,7 +105,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 child: Row(
                   children: [
                     Image.asset(
-                      'assets/user_icon.png',
+                      'assets/username_icon.png',
                       width: 17,
                     ),
                     SizedBox(width: 16),
@@ -229,7 +230,7 @@ class _SignUpPageState extends State<SignUpPage> {
             ),
           ),
           child: Text(
-            'Sign In',
+            'Sign Up',
             style: primaryTextStyle.copyWith(
               fontSize: 16,
               fontWeight: medium,
@@ -284,7 +285,8 @@ class _SignUpPageState extends State<SignUpPage> {
               usernameInput(),
               emailInput(),
               passwordInput(),
-              signUpButton(),
+              LoadingButtom(),
+              // signUpButton(),
               footer(),
             ],
           ),
