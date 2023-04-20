@@ -242,7 +242,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
     Widget footer() {
       return Container(
-        margin: EdgeInsets.only(bottom: 30),
+        margin: EdgeInsets.only(top: 30),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -277,18 +277,20 @@ class _SignUpPageState extends State<SignUpPage> {
           margin: EdgeInsets.symmetric(
             horizontal: defaultMargin,
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              header(),
-              nameInput(),
-              usernameInput(),
-              emailInput(),
-              passwordInput(),
-              LoadingButtom(),
-              // signUpButton(),
-              footer(),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                header(),
+                nameInput(),
+                usernameInput(),
+                emailInput(),
+                passwordInput(),
+                LoadingButtom(),
+                // signUpButton(),
+                footer(),
+              ],
+            ),
           ),
         ),
       ),

@@ -152,7 +152,7 @@ class _SignInPageState extends State<SignInPage> {
 
     Widget footer() {
       return Container(
-        margin: EdgeInsets.only(bottom: 30),
+        margin: EdgeInsets.only(top: 30),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
